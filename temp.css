@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    background: #111;
+}
+
+img {
+    float: right;
+    height: 400px;
+    margin-left: 20%;
+    transform: rotate(13.5deg);
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Ubuntu', sans-serif;
+    background: transparent;
+    color: rgb(215, 213, 213);
+    place-content: "Enter text";
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    background: transparent;
+    color: #d8e1e3;
+}
+
+.text-boxes {
+    background: transparent;
+    display: flex;
+    margin-left: 1px;
+}
+
+input {
+    font-family: 'Ubuntu', sans-serif;
+    height: 30px;
+    width: 35%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #b7c0c2;
+    color: #9da7aa;
+    /*border-radius: 6px;*/
+    padding: 3px;
+    content: "Hello";
+}
+
+select {
+    font-family: 'Ubuntu', sans-serif;
+    height: 40px;
+    width: 200px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #5ADAFF;
+    color: #a3aeb1;
+    /*border-radius: 6px;*/
+    padding: 5px;
+}
+
+select option {
+    background: #111;
+    color: rgb(161, 161, 161);
+
+}
+
+.container {
+    display: absolute;
+    box-sizing: border-box;
+    margin-top: 7%;
+    margin-left: 450px;
+    margin-bottom: 10%;
+    width: 40%;
+    border: 2px solid #e5e9ea;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px 25px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.3s all ease;
+    color: rgb(194, 182, 184);
+    cursor: default;
+    background: transparent;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 5px 13px 13px rgb(183, 182, 182);
+  
+}
+
+.container .content {
+    animation-name: ease;
+    animation-duration: 2s;
+    animation-delay: 0.1s;
+}
+
+button {
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 4px;
+    background: transparent;
+    color: rgb(192, 192, 183);
+    height: 40px;
+    width: 70px;
+    font-size: 16px;
+    border: 1px solid #d0d7d9;
+}
+
+button:hover {
+    background: rgb(190, 180, 180);
+    border: none;
+    transition: 0.3s all ease;
+    color: rgb(206, 194, 194);
+    cursor: pointer;
+}
+
+.answer,
+.answer b {
+    font-family: 'Ubuntu', sans-serif;
+    background: transparent;
+}
+
+span {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(202, 190, 192);
+    background: transparent;
+    margin: 12px;
+    margin-left: 30px;
+}
+
+/* FOOTER  */
+
+footer {
+    background: #b2b6b7;
+    padding: 20px;
+    margin-top: 290px;
+}
+
+footer span {
+    background: #c6cbcd;
+    color: #a9b3b6;
+}
+
+footer span a {
+    color: #c9c4cf;
+    text-decoration: none;
+    background: #a8afb1;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 987px) {
+    img {
+        float: left;
+        height: 400px;
+        margin-left: 14%;
+    }
+}
+
+
+@media (max-width: 755px) {
+    img {
+        float: left;
+        height: 300px;
+        margin-left: 14%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes example {
+    0% {
+        margin-left: -900px;
+    }
+
+    100% {
+        margin-left: 450px;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
